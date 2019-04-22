@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28363F4ABAF7B85881AFEC2B /* Pods_bartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418059C2F12A42C0D1144F5B /* Pods_bartApp.framework */; };
 		95117A90226E836C004D9F61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95117A8F226E836C004D9F61 /* AppDelegate.swift */; };
 		95117A92226E836C004D9F61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95117A91226E836C004D9F61 /* ViewController.swift */; };
 		95117A95226E836C004D9F61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95117A93226E836C004D9F61 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		375497DD16DC710EC4BAC2B6 /* Pods-bartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bartApp.release.xcconfig"; path = "Target Support Files/Pods-bartApp/Pods-bartApp.release.xcconfig"; sourceTree = "<group>"; };
+		418059C2F12A42C0D1144F5B /* Pods_bartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95117A8C226E836C004D9F61 /* bartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95117A8F226E836C004D9F61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95117A91226E836C004D9F61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		95117A96226E836D004D9F61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95117A99226E836D004D9F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95117A9B226E836D004D9F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4BB4FA37B7B9D6370DCAE0 /* Pods-bartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bartApp.debug.xcconfig"; path = "Target Support Files/Pods-bartApp/Pods-bartApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28363F4ABAF7B85881AFEC2B /* Pods_bartApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21F9FE3EBF94C41C620CE6A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BB4FA37B7B9D6370DCAE0 /* Pods-bartApp.debug.xcconfig */,
+				375497DD16DC710EC4BAC2B6 /* Pods-bartApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		23D82D3782E46E3C55B4E17E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				418059C2F12A42C0D1144F5B /* Pods_bartApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95117A83226E836C004D9F61 = {
 			isa = PBXGroup;
 			children = (
 				95117A8E226E836C004D9F61 /* bartApp */,
 				95117A8D226E836C004D9F61 /* Products */,
+				21F9FE3EBF94C41C620CE6A1 /* Pods */,
+				23D82D3782E46E3C55B4E17E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95117A9E226E836D004D9F61 /* Build configuration list for PBXNativeTarget "bartApp" */;
 			buildPhases = (
+				55E189CC5A7B948AB60F68A0 /* [CP] Check Pods Manifest.lock */,
 				95117A88226E836C004D9F61 /* Sources */,
 				95117A89226E836C004D9F61 /* Frameworks */,
 				95117A8A226E836C004D9F61 /* Resources */,
+				D702DF0547D25990449884A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55E189CC5A7B948AB60F68A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bartApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D702DF0547D25990449884A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bartApp/Pods-bartApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bartApp/Pods-bartApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95117A88226E836C004D9F61 /* Sources */ = {
@@ -278,6 +352,7 @@
 		};
 		95117A9F226E836D004D9F61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4BB4FA37B7B9D6370DCAE0 /* Pods-bartApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +370,7 @@
 		};
 		95117AA0226E836D004D9F61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 375497DD16DC710EC4BAC2B6 /* Pods-bartApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
